@@ -33,7 +33,7 @@ export class SignupPage {
                  Validators.maxLength(120)]],
 
       email: ['thiagoremover@gmail.com',[Validators.required, 
-                  Validators.email]],
+                  Validators.email, Validators.pattern('^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$')]],
 
       tipo: ['1',[Validators.required]],
 
